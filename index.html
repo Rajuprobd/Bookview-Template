@@ -8,17 +8,18 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
+  <meta name="author" content="Raju Ahmed" />
   <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="description" content="" /> 
 
   <title>Bookview html landing page Template</title>
 
-  <!-- bootstrap core css -->
+  <!-- Bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!---Animate css------->
   <link rel="stylesheet" href="css/animate.css">
+  <!----Slider/swiper css--->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/owl.css">
   <!----Fontawasome-->
   <link rel="stylesheet" href="css/fontawesome.min.css">
   <!-------Icon ----->
@@ -31,7 +32,18 @@
 </head>
 
 <body>
-
+   <!-- ***** Preloader Start ***** -->
+   <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+       <span class="dot"></span>
+       <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+       </div>
+    </div>
+ </div>
+ <!-- ***** Preloader End ***** -->
   <!------------Start Header Area------------>
   <header class="header-area header-sticky">
     <div class="container">
@@ -50,8 +62,9 @@
               <li class="scroll-to-section"><a href="#our-book">Our Book</a></li>
               <li class="scroll-to-section"><a href="#blogs">Blogs</a></li>
               <li class="scroll-to-section"><a href="#recommend">Recommend</a></li>
-              <li class="scroll-to-section"><a href="#contact">Contact</a></li>
-              <div class="btn sing-in-btn"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt mr-2"></i> Sign In Now</a></div>
+              <li class="scroll-to-section"><a href="#contact-form">Contact</a></li>
+              <div class="btn sing-in-btn"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt mr-2"></i>
+                  Buy Now</a></div>
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
@@ -64,44 +77,7 @@
   </header>
   <!-----------------End Header Area --------------->
 
-   <!---------Start Modal popup section area------------>
-  <div id="modal" class="popupContainer" style="display:none;">
-    <div class="popupHeader">
-        <span class="header_title">Login</span>
-        <span class="modal_close"><i class="fa fa-times"></i></span>
-    </div>
-
-    <section class="popupBody">
-        <!-- Social Login -->
-        <div class="social_login">
-            <div class="">
-                <a href="#" class="social_box fb">
-                    <span class="icon"><i class="fab fa-facebook"></i></span>
-                    <span class="icon_title">Connect with Facebook</span>
-
-                </a>
-
-                <a href="#" class="social_box google">
-                    <span class="icon"><i class="fab fa-google-plus"></i></span>
-                    <span class="icon_title">Connect with Google</span>
-                </a>
-            </div>
-
-            <div class="centeredText">
-                <span>Or use your Email address</span>
-            </div>
-
-            <div class="action_btns">
-                <div class="one_half"><a href="#" id="login_form" class="popup-btn">Login</a></div>
-                <div class="one_half last"><a href="#" id="register_form" class="popup-btn">Sign up</a></div>
-            </div>
-        </div>
-    </section>
-</div>
- <!---------------_-End Modal popup section area--------------- -- -->
-
-
- <!---------------_-Start hero section area--------------- -- -->
+  <!---------------_-Start hero section area--------------- -- -->
 
   <div class="swiper-container" id="home">
     <div class="swiper-wrapper">
@@ -109,8 +85,8 @@
         <div class="slide-inner" style="background-image:url(images/slide-01.jpg)">
           <div class="container">
             <div class="row">
-              <div class="col-lg-8">
-                <div class="header-text">
+              <div class="col-lg-8 offset-lg-2">
+                <div class="header-text text-center">
                   <h2>Get <em>ready</em> for your business<br>&amp; upgrade <em>all Books</em></h2>
                   <div class="div-dec"></div>
                   <p> <a style="color: #FD511A;" href="https://codepopular.com/">Codepopular.com</a> HTML5 Template is
@@ -134,8 +110,8 @@
         <div class="slide-inner" style="background-image:url(images/slide-02.jpg)">
           <div class="container">
             <div class="row">
-              <div class="col-lg-8">
-                <div class="header-text">
+              <div class="col-lg-8 offset-lg-2">
+                <div class="header-text text-center">
                   <h2><em>Online</em> Book Store for you <br>&amp; Best <em>Business</em> Tips</h2>
                   <div class="div-dec"></div>
                   <p>You will see a bunch of free CSS templates when you search on Google. <a style="color: #FD511A;"
@@ -160,8 +136,8 @@
         <div class="slide-inner" style="background-image:url(images/slide-03.jpg)">
           <div class="container">
             <div class="row">
-              <div class="col-lg-8">
-                <div class="header-text">
+              <div class="col-lg-8 offset-lg-2">
+                <div class="header-text text-center">
                   <h2>Best One in Template<br>&amp; Online <em>Services</em></h2>
                   <div class="div-dec"></div>
                   <p>When you browse through different tags on <a style="color: #FD511A;"
@@ -208,7 +184,7 @@
             </div>
           </div>
         </div>
-          <!-------------Item-02-------------->
+        <!-------------Item-02-------------->
         <div class="col-lg-3 box">
           <div class="service-item second-service">
             <div class="icon"></div>
@@ -219,7 +195,7 @@
             </div>
           </div>
         </div>
-          <!-------------Item-03-------------->
+        <!-------------Item-03-------------->
         <div class="col-lg-3 box">
           <div class="service-item third-service">
             <div class="icon"></div>
@@ -230,7 +206,7 @@
             </div>
           </div>
         </div>
-          <!-------------Item-04-------------->
+        <!-------------Item-04-------------->
         <div class="col-lg-3 box">
           <div class="service-item fourth-service">
             <div class="icon"></div>
@@ -313,9 +289,14 @@
                                 <img src="images/product-1.jpg" alt="">
                               </div>
                               <div class="product-content mt-3">
-                                <h6>When the Doves Disappeared</h6>
+                                <h5>Rising Crow</h5>
+                                <p>When the Doves Disappeared</p>
                                 <span style="font-weight: bold;">$48.00</span><span
                                   class="ml-3"><del>$93.00</del></span>
+                              </div>
+                              <div class="cart-icon">
+                                <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip" title="Cart"
+                                    data-bs-placement="left"></i></a>
                               </div>
                             </div>
                           </div>
@@ -326,9 +307,14 @@
                                 <img src="images/product-2.jpg" alt="">
                               </div>
                               <div class="product-content mt-3">
-                                <h6>When the Doves Disappeared</h6>
+                                <h5>Rising Crow</h5>
+                                <p>When the Doves Disappeared</p>
                                 <span style="font-weight: bold;">$48.00</span><span
                                   class="ml-3"><del>$93.00</del></span>
+                              </div>
+                              <div class="cart-icon">
+                                <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip" title="Cart"
+                                    data-bs-placement="left"></i></a>
                               </div>
                             </div>
                           </div>
@@ -339,9 +325,14 @@
                                 <img src="images/product-3.jpg" alt="">
                               </div>
                               <div class="product-content mt-3">
-                                <h6>When the Doves Disappeared</h6>
+                                <h5>Rising Crow</h5>
+                                <p>When the Doves Disappeared</p>
                                 <span style="font-weight: bold;">$48.00</span><span
                                   class="ml-3"><del>$93.00</del></span>
+                              </div>
+                              <div class="cart-icon">
+                                <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip" title="Cart"
+                                    data-bs-placement="left"></i></a>
                               </div>
                             </div>
                           </div>
@@ -352,9 +343,14 @@
                                 <img src="images/product-4.jpg" alt="">
                               </div>
                               <div class="product-content mt-3">
-                                <h6>When the Doves Disappeared</h6>
+                                <h5>Rising Crow</h5>
+                                <p>When the Doves Disappeared</p>
                                 <span style="font-weight: bold;">$48.00</span><span
                                   class="ml-3"><del>$93.00</del></span>
+                              </div>
+                              <div class="cart-icon">
+                                <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip" title="Cart"
+                                    data-bs-placement="left"></i></a>
                               </div>
                             </div>
                           </div>
@@ -365,9 +361,14 @@
                                 <img src="images/product-5.jpg" alt="">
                               </div>
                               <div class="product-content mt-3">
-                                <h6>When the Doves Disappeared</h6>
+                                <h5>Rising Crow</h5>
+                                <p>When the Doves Disappeared</p>
                                 <span style="font-weight: bold;">$48.00</span><span
                                   class="ml-3"><del>$93.00</del></span>
+                              </div>
+                              <div class="cart-icon">
+                                <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip" title="Cart"
+                                    data-bs-placement="left"></i></a>
                               </div>
                             </div>
                           </div>
@@ -378,9 +379,14 @@
                                 <img src="images/product-6.jpg" alt="">
                               </div>
                               <div class="product-content mt-3">
-                                <h6>When the Doves Disappeared</h6>
+                                <h5>Rising Crow</h5>
+                                <p>When the Doves Disappeared</p>
                                 <span style="font-weight: bold;">$48.00</span><span
                                   class="ml-3"><del>$93.00</del></span>
+                              </div>
+                              <div class="cart-icon">
+                                <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip" title="Cart"
+                                    data-bs-placement="left"></i></a>
                               </div>
                             </div>
                           </div>
@@ -391,9 +397,14 @@
                                 <img src="images/product-7.jpg" alt="">
                               </div>
                               <div class="product-content mt-3">
-                                <h6>When the Doves Disappeared</h6>
+                                <h5>Rising Crow</h5>
+                                <p>When the Doves Disappeared</p>
                                 <span style="font-weight: bold;">$48.00</span><span
                                   class="ml-3"><del>$93.00</del></span>
+                              </div>
+                              <div class="cart-icon">
+                                <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip" title="Cart"
+                                    data-bs-placement="left"></i></a>
                               </div>
                             </div>
                           </div>
@@ -404,9 +415,14 @@
                                 <img src="images/product-8.jpg" alt="">
                               </div>
                               <div class="product-content mt-3">
-                                <h6>When the Doves Disappeared</h6>
+                                <h5>Rising Crow</h5>
+                                <p>When the Doves Disappeared</p>
                                 <span style="font-weight: bold;">$48.00</span><span
                                   class="ml-3"><del>$93.00</del></span>
+                              </div>
+                              <div class="cart-icon">
+                                <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip" title="Cart"
+                                    data-bs-placement="left"></i></a>
                               </div>
                             </div>
                           </div>
@@ -427,9 +443,14 @@
                                   <img src="images/product-7.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -440,9 +461,14 @@
                                   <img src="images/product-9.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -453,9 +479,14 @@
                                   <img src="images/product-8.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -466,9 +497,14 @@
                                   <img src="images/product-3.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -479,9 +515,14 @@
                                   <img src="images/product-7.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -492,9 +533,14 @@
                                   <img src="images/product-2.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -514,9 +560,14 @@
                                   <img src="images/product-6.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -527,9 +578,14 @@
                                   <img src="images/product-5.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -540,9 +596,14 @@
                                   <img src="images/product-3.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -553,9 +614,14 @@
                                   <img src="images/product-1.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -566,9 +632,14 @@
                                   <img src="images/product-7.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -579,9 +650,14 @@
                                   <img src="images/product-8.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -592,9 +668,14 @@
                                   <img src="images/product-9.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -605,9 +686,14 @@
                                   <img src="images/product-3.jpg" alt="">
                                 </div>
                                 <div class="product-content mt-3">
-                                  <h6>When the Doves Disappeared</h6>
+                                  <h5>Rising Crow</h5>
+                                  <p>When the Doves Disappeared</p>
                                   <span style="font-weight: bold;">$48.00</span><span
                                     class="ml-3"><del>$93.00</del></span>
+                                </div>
+                                <div class="cart-icon">
+                                  <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip"
+                                      title="Cart" data-bs-placement="left"></i></a>
                                 </div>
                               </div>
                             </div>
@@ -627,39 +713,6 @@
 
   <!----------------End products area--------------->
 
-  <!----------------Start book banner area------------>
-  <section class="book-banner" id="section">
-    <div class="banner-img">
-      <img src="images/slide-01.jpg" alt="" />
-      <!-- Start Subscribe Area -->
-      <div class="subscribe-area">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <div class="subscribe-content">
-                <h2>Sign Up Our Newsletter</h2>
-                <p>We Offer An Informative Monthly Technology Newsletter - Check It
-                  Out.</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <form class="newsletter-form" id="subscribeForm">
-                <input type="email" class="input-newsletter" placeholder="Enter your email" name="email" id="subEmail"
-                  autocomplete="off">
-                <button type="submit">Subscribe Now</button>
-                <div id="validator-newsletter" class="form-result"></div>
-                <div class="subscribe-form-status">
-                  <p id="subscribeEmailStatus" class="formError text-white"></p>
-                  <div id="subStatuseMessage"></div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!----------------End book banner area------------>
   <!----------------Start Recommended Products area---------->
   <section id="section">
     <div class="Recommended-Products" id="recommend">
@@ -675,8 +728,13 @@
                 <img src="images/product-9.jpg" alt="">
               </div>
               <div class="product-content mt-3">
-                <h6>When the Doves Disappeared</h6>
+                <h5>Rising Crow</h5>
+                <p>When the Doves Disappeared</p>
                 <span style="font-weight: bold;">$48.00</span><span class="ml-3"><del>$93.00</del></span>
+              </div>
+              <div class="cart-icon">
+                <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip" title="Cart"
+                    data-bs-placement="left"></i></a>
               </div>
             </div>
           </div>
@@ -687,8 +745,13 @@
                 <img src="images/product-5.jpg" alt="">
               </div>
               <div class="product-content mt-3">
-                <h6>When the Doves Disappeared</h6>
+                <h5>Rising Crow</h5>
+                <p>When the Doves Disappeared</p>
                 <span style="font-weight: bold;">$48.00</span><span class="ml-3"><del>$93.00</del></span>
+              </div>
+              <div class="cart-icon">
+                <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip" title="Cart"
+                    data-bs-placement="left"></i></a>
               </div>
             </div>
           </div>
@@ -699,8 +762,13 @@
                 <img src="images/product-8.jpg" alt="">
               </div>
               <div class="product-content mt-3">
-                <h6>When the Doves Disappeared</h6>
+                <h5>Rising Crow</h5>
+                <p>When the Doves Disappeared</p>
                 <span style="font-weight: bold;">$48.00</span><span class="ml-3"><del>$93.00</del></span>
+              </div>
+              <div class="cart-icon">
+                <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip" title="Cart"
+                    data-bs-placement="left"></i></a>
               </div>
             </div>
           </div>
@@ -711,8 +779,13 @@
                 <img src="images/products-10 .jpg" alt="">
               </div>
               <div class="product-content mt-3">
-                <h6>When the Doves Disappeared</h6>
+                <h5>Rising Crow</h5>
+                <p>When the Doves Disappeared</p>
                 <span style="font-weight: bold;">$48.00</span><span class="ml-3"><del>$93.00</del></span>
+              </div>
+              <div class="cart-icon">
+                <a href="#"><i class="fas fa-shopping-cart tool-tip" data-toggle="tooltip" title="Cart"
+                    data-bs-placement="left"></i></a>
               </div>
             </div>
           </div>
@@ -721,10 +794,68 @@
     </div>
   </section>
   <!----------------End Recommended Products area---------->
+  <!---------------Start-contact-section---------------------->
+  <section id="contact-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-title text-center contact-heading">
+            <h2>CONTACT US</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et
+              dolore magna aliqua, magna aliqua. ipsum simply dummy text of the printing.</p>
+          </div>
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+          <div class="contact-form mt-5">
+            <form id="contactForm" class="contact-form form" action="#" method="post">
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name">
+                    <p id="nameStatus" class="formError"></p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
+                    <p id="emailStatus" class="formError"></p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <input type="number" name="phone" id="phone" class="form-control" placeholder="Your Phone">
+                    <p id="phoneStatus" class="formError"></p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Your Subject">
+                    <p id="subjectStatus" class="formError"></p>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <div class="form-group">
+                    <textarea name="message" class="form-control" id="message" cols="30" rows="6"
+                      placeholder="Your Message"></textarea>
+                    <p id="messageStatus" class="formError"></p>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <button type="submit" class="default-btn btn-lg submit-btn">Send Message</button>
+                </div>
+              </div>
+              <div class="status-message"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---------------End-contact-section---------------------->
   <!----------------Start blog section area---------------->
   <section id="section">
     <div class="section-title" id="blogs">
-      <h2>From Our Blog</h2>
+      <h2> Our Blog</h2>
     </div>
     <div class="blog-section">
       <div class="container">
@@ -773,7 +904,39 @@
 
   <!---------------Start-wideget-section------------>
   <section id="section">
-    <div class="wideget-section" id="contact">
+    <div class="wideget-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Start Subscribe Area -->
+            <div class="subscribe-area">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="subscribe-content">
+                      <h2>Sign Up Our Newsletter</h2>
+                      <p>Join Our Mailing List To Receive The Latest News - Check It
+                        Out.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <form class="newsletter-form" id="subscribeForm">
+                      <input type="email" class="input-newsletter" placeholder="Enter your email" name="email"
+                        id="subEmail" autocomplete="off">
+                      <button type="submit">Subscribe Now</button>
+                      <div id="validator-newsletter" class="form-result"></div>
+                      <div class="subscribe-form-status">
+                        <p id="subscribeEmailStatus" class="formError text-white"></p>
+                        <div id="subStatuseMessage"></div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="row">
           <!-------item-one----->
@@ -840,11 +1003,13 @@
                 <ul>
                   <li><i class="fas fa-map-marker-alt icon"></i> <a href="#"><span class="icon-text"> Demo Store
                         United States</span></a></li>
-                  <li><i class="fas fa-phone-volume icon"></i> <a href="#"><span
+                  <li class="mt-2"><i class="fas fa-phone-volume icon"></i> <a href="#"><span
                         class="icon-text">01735552927</span></a></li>
-                  <li><i class="far fa-envelope icon"></i><a href="#"><span class="icon-text"> Demo@gmail.com</span></a>
+                  <li class="mt-2"><i class="far fa-envelope icon"></i><a href="#"><span class="icon-text">
+                        Demo@gmail.com</span></a>
                   </li>
-                  <li><i class="fa fa-home icon"></i><a href="#"><span class="icon-text"> 0123-456-7890</span></a></li>
+                  <li class="mt-2"><i class="fa fa-home icon"></i><a href="#"><span class="icon-text">
+                        0123-456-7890</span></a></li>
                 </ul>
               </div>
             </div>
@@ -883,13 +1048,15 @@
     <i class="fas fa-chevron-up"></i>
   </div>
   <!-- End Go Top Section -->
-
+  <!------------Jquery js ------->
   <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-----------Bootstrap js----->
   <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <!----------Swiper/For Sloder js------>
   <script src="js/swiper.js"></script>
+  <!-----------Isotop js-------->
   <script src="js/isotope.min.js"></script>
-    <script src="js/owl-carousel.js"></script>
-  <script src="js/popup.js"></script>
+  <!-----------Custom Script js-->
   <script src="js/custom.js"></script>
 </body>
 

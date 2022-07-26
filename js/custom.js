@@ -2,16 +2,7 @@
 (function ($) {
 
   "use strict";
-  /*------------ Start popup script text-------------*/
-  $("#modal_trigger").leanModal({
-		top: 100,
-		overlay: 0.6,
-		closeButton: ".modal_close"
-});
-
-  /*------------ End popup script text-------------*/
-
-  // WOW JS
+  //================== WOW JS==============================//
   $(window).on('load', function () {
     if ($(".wow").length) {
       var wow = new WOW({
@@ -24,7 +15,12 @@
       wow.init();
     }
   });
+    //====================Start pre loader js======================// 
+    $(window).on('load', function () {
+      $('#js-preloader').addClass('loaded');
 
+  });
+  //====================End pre loader js======================// 
     
   /*-------------------Start slider script code------------------*/
   var interleaveOffset = 0.5;
