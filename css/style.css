@@ -852,6 +852,7 @@ global styles
 .swiper-button-next,
 .swiper-button-prev {
   color: #fff !important;
+  top: 33% !important;
 }
 
 /* 

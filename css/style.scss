@@ -907,6 +907,8 @@ global styles
 .swiper-button-next,
 .swiper-button-prev {
   color: #fff !important;
+  top: 33% !important;
+
 }
 
 
@@ -1373,14 +1375,17 @@ End-contact-area
       box-shadow: 0px 0px 10px 0px #eee;
       position: relative;
       cursor: pointer;
-      .blog-img{
-        img{
+
+      .blog-img {
+        img {
           height: 300px;
         }
       }
+
       .blog-content {
         margin-top: 10px;
         padding: 10px 10px;
+
         h4 {
           padding-bottom: 8px;
         }
@@ -1407,6 +1412,7 @@ End-contact-area
           padding-bottom: 10px;
         }
       }
+
       &:after {
         content: "";
         clear: both;
@@ -1419,6 +1425,7 @@ End-contact-area
         bottom: 0;
         right: 0;
       }
+
       &:hover:after {
         width: 100%;
         left: 0;
@@ -1458,19 +1465,23 @@ section.testimonials {
     margin: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     padding-top: 35px;
-      .content{
+
+    .content {
       width: 65%;
+    }
+
+    .right-image {
+      width: 35%;
+      padding: 0px 20px;
+
+      img {
+        border-radius: 5px;
+        width: 100%;
+        height: 300px;
+
       }
-      .right-image{
-       width: 35%;
-        padding: 0px 20px;
-        img {
-          border-radius: 5px;
-          width: 100%;
-          height: 300px;
-      
-        }
-      }
+    }
+
     i {
       width: 70px;
       height: 70px;
@@ -1528,25 +1539,28 @@ section.testimonials {
 ---------------------------------------
 */
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .testimonials {
     .item {
       display: inline-block;
       margin: 0px;
-        .content{
+
+      .content {
         width: 100%;
-        }
-        .right-image{
-          margin-top: 15px;
-         width: 100%;
-          padding: 0px 0px;
-          img {
-  height: 250px;
-        
-          }
+      }
+
+      .right-image {
+        margin-top: 15px;
+        width: 100%;
+        padding: 0px 0px;
+
+        img {
+          height: 250px;
+
         }
       }
     }
+  }
 }
 
 /* 
@@ -1684,8 +1698,9 @@ End subscribe section Style
                 transition: .35s;
                 color: #212741;
                 font-size: 25px;
-                &:hover{
-                color: #3FAB79;
+
+                &:hover {
+                  color: #3FAB79;
                 }
               }
             }
@@ -1709,7 +1724,8 @@ End subscribe section Style
               font-size: 20px;
               font-family: 'poppins';
               transition: .35s;
-              &:hover{
+
+              &:hover {
                 color: #3FAB79;
               }
 
