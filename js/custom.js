@@ -15,13 +15,13 @@
       wow.init();
     }
   });
-    //====================Start pre loader js======================// 
-    $(window).on('load', function () {
-      $('#js-preloader').addClass('loaded');
+  //====================Start pre loader js======================// 
+  $(window).on('load', function () {
+    $('#js-preloader').addClass('loaded');
 
   });
   //====================End pre loader js======================// 
-    
+
   /*-------------------Start slider script code------------------*/
   var interleaveOffset = 0.5;
   var swiperOptions = {
@@ -65,7 +65,28 @@
 
   var swiper = new Swiper(".swiper-container", swiperOptions);
   /*------------------End slider script code-----------------*/
+  //========================Start testimonials js text-=====================//
 
+  $('.owl-testimonials').owlCarousel({
+    items: 1,
+    loop: true,
+    dots: true,
+    nav: false,
+    autoplay: true,
+    margin: 15,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    }
+  });
+  //========================End testimonials js text-=====================//
   /*---------------Start header script text------------------*/
 
   $(window).scroll(function () {
@@ -148,7 +169,5 @@
     }, 500)
   });
   //=======================End back to top btn js========================//
-
-
 
 })(window.jQuery);

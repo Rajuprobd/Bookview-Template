@@ -906,7 +906,6 @@ global styles
 
 .swiper-button-next,
 .swiper-button-prev {
-  margin-top: 50px;
   color: #fff !important;
 }
 
@@ -1322,11 +1321,13 @@ End Products section Style
         }
 
         .form-control {
-          background-color: #ffffff;
+          background-color: transparent;
           border: none;
           height: 55px;
           font-size: 15px;
-          box-shadow: 0px 0px 10px 0px #ab9999;
+          box-shadow: 0px 0px 5px 0px #eee;
+          color: #fff;
+          border: 1px solid #fff;
         }
 
         #message {
@@ -1337,12 +1338,15 @@ End Products section Style
       }
 
       .default-btn {
+        background-color: transparent;
         transition: 0.35s;
-        border: 2px solid #212741;
+        border: 2px solid #fff;
+        color: #fff;
 
         &:hover {
           background-color: #43BA7F;
           color: #fff;
+          border: 2px solid #43BA7F;
         }
       }
     }
@@ -1361,32 +1365,30 @@ End-contact-area
 --------------------------------------------- 
 */
 #section {
-  position: relative;
-
   .blog-section {
     margin-top: 40px;
 
     .blog-item {
-      display: flex;
-      gap: 10px 20px;
-      /* row-gap column gap */
-
-
-      .blog-img {
-        width: 50%;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px #eee;
+      position: relative;
+      cursor: pointer;
+      .blog-img{
+        img{
+          height: 300px;
+        }
       }
-
       .blog-content {
-        width: 50%;
-
+        margin-top: 10px;
+        padding: 10px 10px;
         h4 {
-          padding-bottom: 10px;
+          padding-bottom: 8px;
         }
 
         span {
           color: #43BA7F;
           font-weight: bolder;
-          margin-top: 20px;
+          margin-top: 10px;
         }
 
         a {
@@ -1396,37 +1398,31 @@ End-contact-area
 
           &:hover {
             text-decoration: none;
-
+            color: #43BA7F;
           }
         }
 
         p {
-          margin-top: 10px;
+          margin-top: 8px;
           padding-bottom: 10px;
         }
       }
-    }
-  }
-}
-
-/*--------------Responsive blog------------*/
-@media (max-width: 512px) {
-  #section {
-    .blog-section {
-      .blog-item {
-        display: inline-block !important;
-
-        .blog-img {
-          width: 100%;
-        }
-
-        .blog-content {
-          margin-top: 10px;
-          width: 100%;
-
-        }
+      &:after {
+        content: "";
+        clear: both;
+        display: block;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        width: 0%;
+        height: 5px;
+        background: #43BA7F;
+        bottom: 0;
+        right: 0;
       }
-
+      &:hover:after {
+        width: 100%;
+        left: 0;
+      }
     }
   }
 }
@@ -1434,6 +1430,128 @@ End-contact-area
 /* 
 ---------------------------------------------
  End Blog section Style
+--------------------------------------------- 
+*/
+
+/* 
+---------------------------------------------
+ Start testimonials section Style
+--------------------------------------------- 
+*/
+
+section.testimonials {
+  margin-top: 90px;
+
+  .section-heading {
+    padding-top: 30px;
+  }
+}
+
+.testimonials {
+  .item {
+    display: flex;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 50px 0px 50px 50px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding-top: 35px;
+      .content{
+      width: 65%;
+      }
+      .right-image{
+       width: 35%;
+        padding: 0px 20px;
+        img {
+          border-radius: 5px;
+          width: 100%;
+          height: 300px;
+      
+        }
+      }
+    i {
+      width: 70px;
+      height: 70px;
+      background-color: #43ba7f;
+      display: inline-block;
+      text-align: center;
+      line-height: 70px;
+      color: #fff;
+      font-size: 44px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    h4 {
+      margin-top: 30px;
+      font-size: 22px;
+      font-weight: 600;
+      position: relative;
+    }
+
+    span {
+      margin-top: 5px;
+      display: block;
+      font-size: 15px;
+      font-weight: 600;
+      color: #43ba7f;
+    }
+  }
+
+  .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+
+    .owl-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #ffa88c;
+      border-radius: 50%;
+      margin: 0px 4px;
+    }
+
+    .active {
+      background-color: #ff511a;
+    }
+  }
+}
+
+/*-------------------------------------
+   Responsive testimonials 
+---------------------------------------
+*/
+
+@media (max-width: 768px){
+  .testimonials {
+    .item {
+      display: inline-block;
+      margin: 0px;
+        .content{
+        width: 100%;
+        }
+        .right-image{
+          margin-top: 15px;
+         width: 100%;
+          padding: 0px 0px;
+          img {
+  height: 250px;
+        
+          }
+        }
+      }
+    }
+}
+
+/* 
+---------------------------------------------
+ End testimonials section Style
 --------------------------------------------- 
 */
 
@@ -1502,8 +1620,6 @@ End-contact-area
       }
     }
   }
-
-
 }
 
 /* 
@@ -1565,8 +1681,12 @@ End subscribe section Style
               list-style: none;
 
               a {
+                transition: .35s;
                 color: #212741;
                 font-size: 25px;
+                &:hover{
+                color: #3FAB79;
+                }
               }
             }
           }
@@ -1588,6 +1708,10 @@ End subscribe section Style
               color: #212741;
               font-size: 20px;
               font-family: 'poppins';
+              transition: .35s;
+              &:hover{
+                color: #3FAB79;
+              }
 
             }
           }
